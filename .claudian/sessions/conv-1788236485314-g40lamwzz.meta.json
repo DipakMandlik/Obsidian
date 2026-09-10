@@ -1,0 +1,25 @@
+{
+  "id": "conv-1788236485314-g40lamwzz",
+  "providerId": "claude",
+  "title": "hi",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788236485317,
+  "updatedAt": 1788331646681,
+  "lastResponseAt": 1788237001256,
+  "sessionId": "2be74bb6-87b9-4e2d-98ee-88d987666f63",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "2be74bb6-87b9-4e2d-98ee-88d987666f63"
+  },
+  "currentNote": "wiki/concepts/DBT.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 39,
+    "cacheCreationInputTokens": 662,
+    "cacheReadInputTokens": 84399,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 85100,
+    "percentage": 43
+  }
+}

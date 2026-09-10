@@ -1,0 +1,24 @@
+{
+  "id": "conv-1787219565089-1v8pavfob",
+  "providerId": "claude",
+  "title": "\"So the overall principle is: one platform, five r...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1787219565126,
+  "updatedAt": 1787553265804,
+  "lastResponseAt": 1787553265804,
+  "sessionId": "c650b389-0ca6-4cdd-9c30-994d5cdf2eed",
+  "selectedModel": "haiku",
+  "providerState": {
+    "providerSessionId": "c650b389-0ca6-4cdd-9c30-994d5cdf2eed"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 5511,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 64000,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 69511,
+    "percentage": 35
+  }
+}

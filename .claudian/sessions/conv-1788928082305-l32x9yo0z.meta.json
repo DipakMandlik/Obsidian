@@ -1,0 +1,25 @@
+{
+  "id": "conv-1788928082305-l32x9yo0z",
+  "providerId": "claude",
+  "title": "explain me exactly what we done in the register ta...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788928082316,
+  "updatedAt": 1788953500284,
+  "lastResponseAt": 1788928395151,
+  "sessionId": "9a19497b-84fa-4015-b5cf-495c27bda659",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "9a19497b-84fa-4015-b5cf-495c27bda659"
+  },
+  "currentNote": "wiki/prototypes/IDP/What we done.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 73852,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 73854,
+    "percentage": 37
+  }
+}

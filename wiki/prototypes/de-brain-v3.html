@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DE Brain v3 - Universal Product Intelligence</title>
+    <style>
+        :root {
+            --primary: #0052CC;
+            --accent: #00B8D9;
+            --danger: #FF5630;
+            --success: #36B37E;
+            --bg-deep: #F4F5F7;
+            --bg-card: #FFFFFF;
+            --text-dark: #172B4D;
+            --text-light: #5E6C84;
+            --border: #EBECF0;
+        }
+
+        body {
+            background-color: var(--bg-deep);
+            color: var(--text-dark);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Top Bar: Strategic Overview */
+        header {
+            background: white;
+            border-bottom: 2px solid var(--primary);
+            padding: 16px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .kpi-strip {
+            display: flex;
+            gap: 40px;
+        }
+
+        .kpi-card { text-align: left; }
+        .kpi-label { font-size: 0.65rem; font-weight: 800; text-transform: uppercase; color: var(--text-light); letter-spacing: 1px; }
+        .kpi-value { font-size: 1.2rem; font-weight: 700; color: var(--primary); }
+        .kpi-trend { font-size: 0.7rem; font-weight: 600; }
+
+        /* Main Workspace */
+        main {
+            display: grid;
+            grid-template-columns: 350px 1fr 380px;
+            gap: 24px;
+            padding: 24px;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .workspace-panel {
+            background: var(--bg-card);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+
+        .panel-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #FAFBFC;
+        }
+
+        .panel-header h2 { margin: 0; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-light); }
+
+        /* Left Panel: Value Lineage */
+        .lineage-view { padding: 20px; flex: 1; overflow-y: auto; }
+        .impact-node {
+            padding: 12px;
+            border-radius: 8px;
+            background: var(--bg-soft);
+            border: 1px solid var(--border);
+            margin-bottom: 16px;
+            position: relative;
+        }
+        .impact-node::after {
+            content: ''; position: absolute; bottom: -16px; left: 24px;
+            width: 2px; height: 16px; background: var(--border);
+        }
+        .impact-node:last-child::after { display: none; }
+
+        /* Center Stage: Strategic Simulation */
+        .simulation-stage { padding: 24px; flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 24px; }
+        
+        .incident-banner {
+            background: #FFEBE6;
+            border: 1px solid var(--danger);
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .agent-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
+        }
+
+        .agent-intel-card {
+            background: white; border: 1px solid var(--border); border-radius: 8px; padding: 20px;
+            border-top: 4px solid var(--primary);
+        }
+
+        .agent-identity { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+        .agent-avatar { width: 32px; height: 32px; background: var(--primary); color: white; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+        .agent-role { font-size: 0.75rem; font-weight: 800; color: var(--primary); text-transform: uppercase; }
+
+        /* Right Panel: Universal Resolution */
+        .resolution-summary { padding: 24px; flex: 1; overflow-y: auto; }
+        .step-box {
+            padding: 16px; background: var(--bg-soft); border-left: 4px solid var(--accent);
+            margin-bottom: 20px; border-radius: 0 8px 8px 0;
+        }
+
+        .metric-impact {
+            background: var(--text-dark); color: white; padding: 16px; border-radius: 8px; margin-top: auto;
+        }
+
+        .pulse { animation: pulse-red 2s infinite; }
+        @keyframes pulse-red { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div style="display: flex; align-items: center; gap: 16px;">
+            <div style="background: var(--primary); width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 900;">B</div>
+            <div>
+                <div style="font-weight: 800; font-size: 1.1rem; letter-spacing: -0.5px;">BRAIN_UNIVERSAL_CORE</div>
+                <div style="font-size: 0.7rem; color: var(--text-light); font-weight: 600;">STRATEGIC PRODUCT INTELLIGENCE // JGW REPLICA v3</div>
+            </div>
+        </div>
+
+        <div class="kpi-strip">
+            <div class="kpi-card">
+                <div class="kpi-label">Liquidity Pipeline</div>
+                <div class="kpi-value">$2.4M</div>
+                <div class="kpi-trend" style="color: var(--success);">↑ 4.2%</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Data Fidelity</div>
+                <div class="kpi-value" style="color: var(--danger);">84.2%</div>
+                <div class="kpi-trend" style="color: var(--danger);">↓ 12% ALERT</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Conversion Ops</div>
+                <div class="kpi-value">99.1%</div>
+                <div class="kpi-trend" style="color: var(--success);">NOMINAL</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Panel 1: Value Lineage (The "Universal" Map) -->
+        <section class="workspace-panel">
+            <div class="panel-header"><h2>Universal Value Lineage</h2></div>
+            <div class="lineage-view">
+                
+                <div class="impact-node" style="border-color: var(--primary);">
+                    <div class="kpi-label" style="color: var(--primary);">Product Goal</div>
+                    <div style="font-weight: 700;">Maximize Debt Consolidation ROI</div>
+                </div>
+
+                <div class="impact-node" style="border-color: var(--accent);">
+                    <div class="kpi-label" style="color: var(--accent);">Metric KPI</div>
+                    <div style="font-weight: 700;">Daily Enrollment Velocity</div>
+                </div>
+
+                <div class="impact-node" style="border-color: var(--danger); background: #FFF5F5;">
+                    <div class="kpi-label" style="color: var(--danger);">Technical Dependency</div>
+                    <div style="font-weight: 700;">FCT_DEBT_ENROLLMENTS (Snowflake)</div>
+                    <div style="font-size: 0.7rem; color: var(--danger); margin-top: 4px;">● LATENCY DETECTED: 4.2h</div>
+                </div>
+
+                <div class="impact-node">
+                    <div class="kpi-label">Root Infrastructure</div>
+                    <div style="font-weight: 700;">Airflow DAG: sfdc_debt_sync_daily</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Panel 2: Strategic Simulation Stage -->
+        <section class="workspace-panel">
+            <div class="panel-header"><h2>Strategic Impact Simulation</h2></div>
+            <div class="simulation-stage">
+                
+                <div class="incident-banner">
+                    <div style="font-size: 2rem;" class="pulse">⚠️</div>
+                    <div>
+                        <div style="font-weight: 800; font-size: 1rem; color: #BF2600;">Critical Signal: Metric Blinding</div>
+                        <div style="font-size: 0.85rem; color: #666;">The latency in `FCT_DEBT_ENROLLMENTS` is degrading the **Product Health Dashboard**. Recovery required within 45m.</div>
+                    </div>
+                </div>
+
+                <div class="agent-grid">
+                    
+                    <div class="agent-intel-card">
+                        <div class="agent-identity">
+                            <div class="agent-avatar" style="background: #0052CC;">PA</div>
+                            <div class="agent-role">Product Analyst</div>
+                        </div>
+                        <div class="agent-thought" style="font-size: 0.85rem;">
+                            "This delay directly impacts our <b>Buyback Strategy</b>. We are operating on T-1 data for a T-0 market. We must expedite the dbt run."
+                        </div>
+                    </div>
+
+                    <div class="agent-intel-card" style="border-top-color: #36B37E;">
+                        <div class="agent-identity">
+                            <div class="agent-avatar" style="background: #36B37E;">DE</div>
+                            <div class="agent-role" style="color: #36B37E;">Core Engineer</div>
+                        </div>
+                        <div class="agent-thought" style="font-size: 0.85rem;">
+                            "I've simulated the <b>Replica Fix</b>. The deadlock is occurring in the staging layer due to the new Salesforce field. Applying `coalesce` fix now."
+                        </div>
+                    </div>
+
+                    <div class="agent-intel-card" style="border-top-color: #FFAB00;">
+                        <div class="agent-identity">
+                            <div class="agent-avatar" style="background: #FFAB00;">DA</div>
+                            <div class="agent-role" style="color: #FFAB00;">Architect</div>
+                        </div>
+                        <div class="agent-thought" style="font-size: 0.85rem;">
+                            "I've reviewed the <b>Universal Schema</b>. The fix preserves the downstream integrity for the 40+ warehouse tables. Safe to deploy."
+                        </div>
+                    </div>
+
+                    <div class="agent-intel-card" style="border-top-color: #6554C0;">
+                        <div class="agent-identity">
+                            <div class="agent-avatar" style="background: #6554C0;">DO</div>
+                            <div class="agent-role" style="color: #6554C0;">DataOps</div>
+                        </div>
+                        <div class="agent-thought" style="font-size: 0.85rem;">
+                            "Triggering <b>High-Priority Backfill</b>. Estimated time to metric restoration: 12 minutes."
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Panel 3: Universal Resolution Roadmap -->
+        <section class="workspace-panel">
+            <div class="panel-header"><h2>Universal Recovery Roadmap</h2></div>
+            <div class="resolution-summary">
+                
+                <div class="step-box">
+                    <div class="kpi-label">1. Technical Resolution</div>
+                    <div style="font-size: 0.85rem; margin-top: 8px;">
+                        Update `stg_sfdc_opportunities.sql` with the lead source detail fix to resolve ingestion deadlock.
+                    </div>
+                </div>
+
+                <div class="step-box" style="border-left-color: var(--primary);">
+                    <div class="kpi-label">2. Product Re-Sync</div>
+                    <div style="font-size: 0.85rem; margin-top: 8px;">
+                        Verify that the <b>Liquidity Pipeline</b> KPI restores to >= 98% fidelity.
+                    </div>
+                </div>
+
+                <div class="metric-impact">
+                    <div class="kpi-label" style="color: #888;">Simulated Outcome</div>
+                    <div style="font-size: 1.1rem; font-weight: 700; margin-top: 8px;">Restores $200k+ / day in visibility.</div>
+                    <div style="font-size: 0.75rem; color: var(--success); margin-top: 4px;">● NO DOWNSTREAM BREAKAGES DETECTED</div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

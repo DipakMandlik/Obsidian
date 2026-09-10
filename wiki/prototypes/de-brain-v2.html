@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DE Brain - Knowledge Twin Workbench</title>
+    <style>
+        :root {
+            --primary: #0052CC;
+            --primary-light: #DEEBFF;
+            --bg-main: #FFFFFF;
+            --bg-soft: #F4F5F7;
+            --text-main: #172B4D;
+            --text-sub: #5E6C84;
+            --border: #DFE1E6;
+            --success: #36B37E;
+            --warning: #FFAB00;
+        }
+
+        body {
+            background-color: var(--bg-soft);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top Navigation */
+        nav {
+            height: 56px;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 24px;
+            justify-content: space-between;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+
+        .nav-brand { font-weight: 700; letter-spacing: -0.5px; font-size: 1.1rem; }
+        .nav-status { font-size: 0.75rem; display: flex; gap: 16px; opacity: 0.8; }
+
+        /* Workspace Layout */
+        main {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        /* Sidebar: Metadata Inspector */
+        aside {
+            width: 320px;
+            background: var(--bg-main);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .panel-title {
+            padding: 16px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--text-sub);
+            border-bottom: 1px solid var(--border);
+            background: var(--bg-soft);
+        }
+
+        .metadata-tree {
+            flex: 1;
+            overflow-y: auto;
+            padding: 8px 0;
+        }
+
+        .tree-node {
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tree-node:hover { background: var(--bg-soft); }
+        .tree-node.active { background: var(--primary-light); color: var(--primary); font-weight: 600; }
+
+        /* Center Stage: Simulation & Intelligence */
+        .stage {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: var(--bg-main);
+        }
+
+        .simulation-header {
+            padding: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .simulation-header h1 { margin: 0; font-size: 1.5rem; color: var(--primary); }
+        .simulation-header p { margin: 8px 0 0; color: var(--text-sub); font-size: 0.9rem; }
+
+        .agent-simulation-area {
+            flex: 1;
+            padding: 24px;
+            overflow-y: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            align-content: start;
+        }
+
+        .agent-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .agent-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+        .agent-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+        .agent-badge { 
+            width: 32px; height: 32px; border-radius: 4px; 
+            background: var(--primary); color: white; 
+            display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.75rem;
+        }
+        .agent-role { font-size: 0.8rem; font-weight: 700; color: var(--primary); text-transform: uppercase; }
+
+        .agent-thought { font-size: 0.9rem; line-height: 1.6; color: var(--text-main); }
+
+        /* Right Panel: Resolution Output */
+        .resolution {
+            width: 450px;
+            background: var(--bg-soft);
+            border-left: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .output-box {
+            margin: 16px;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .code-header {
+            padding: 12px;
+            background: #272C35;
+            color: #A9B2C3;
+            font-size: 0.75rem;
+            font-family: monospace;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .code-content {
+            padding: 20px;
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: #24292e;
+            background: #f6f8fa;
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            margin-right: 4px;
+        }
+        .tag-blue { background: var(--primary-light); color: var(--primary); }
+        .tag-green { background: #E3FCEF; color: #006644; }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-brand">DATA_ENGINEERING_BRAIN // SIMULATION_v2</div>
+        <div class="nav-status">
+            <span>● REPLICA_ACTIVE</span>
+            <span>● METADATA_SYNCED</span>
+            <span>● SYSTEM_STABLE</span>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Sidebar: Detailed Metadata & Tables -->
+        <aside>
+            <div class="panel-title">Metadata Inspector</div>
+            <div class="metadata-tree">
+                <div class="tree-node active">
+                    <span style="opacity: 0.5;">📂</span> RAW_LANDING
+                </div>
+                <div class="tree-node" style="padding-left: 32px;">
+                    <span>📄</span> SF_OPPORTUNITIES
+                </div>
+                <div class="tree-node">
+                    <span style="opacity: 0.5;">📂</span> SILVER_STAGING
+                </div>
+                <div class="tree-node" style="padding-left: 32px;">
+                    <span>📄</span> STG_SFDC_SALES
+                </div>
+                <div class="tree-node">
+                    <span style="opacity: 0.5;">📂</span> GOLD_WAREHOUSE
+                </div>
+                <div class="tree-node" style="padding-left: 32px;">
+                    <span>📄</span> FCT_REVENUE_METRICS
+                </div>
+                <div class="tree-node" style="padding-left: 32px;">
+                    <span>📄</span> DIM_SALES_REP
+                </div>
+            </div>
+            
+            <div class="panel-title" style="margin-top: auto; border-top: 1px solid var(--border);">Documentation Hub</div>
+            <div style="padding: 16px; font-size: 0.8rem; color: var(--text-sub);">
+                Detailed constraints, join keys, and business logic for the 40 Snowflake tables are mapped here.
+            </div>
+        </aside>
+
+        <!-- Center Stage: Multi-Agent Logic Engine -->
+        <section class="stage">
+            <div class="simulation-header">
+                <span class="tag tag-blue">INCIDENT_ANALYSIS</span>
+                <h1>Simulation: Salesforce Schema Drift</h1>
+                <p>Analyzing the impact of a new column `lead_source_detail` on downstream warehouse stability.</p>
+            </div>
+
+            <div class="agent-simulation-area">
+                
+                <div class="agent-card">
+                    <div class="agent-meta">
+                        <div class="agent-badge">DA</div>
+                        <div class="agent-role">Data Architect</div>
+                    </div>
+                    <div class="agent-thought">
+                        "The new column `lead_source_detail` introduces a granularity change. I've cross-referenced the <b>FCT_REVENUE</b> metadata; we must ensure this doesn't create fan-out during the incremental load."
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-meta">
+                        <div class="agent-badge" style="background: #36B37E;">DE</div>
+                        <div class="agent-role" style="color: #36B37E;">Support Engineer</div>
+                    </div>
+                    <div class="agent-thought">
+                        "I have simulated the <b>dbt compile</b> on the dummy environment. The staging model `STG_SF_OPPORTUNITIES` requires a `nullif` wrap to prevent downstream breakages in the aggregation layer."
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-meta">
+                        <div class="agent-badge" style="background: #FFAB00;">QA</div>
+                        <div class="agent-role" style="color: #FFAB00;">Data Validator</div>
+                    </div>
+                    <div class="agent-thought">
+                        "Running integrity check... Recommended test: `dbt test --select stg_sf_opportunities`. We must verify that the <b>unique_key</b> remains valid with the new field."
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-meta">
+                        <div class="agent-badge" style="background: #6554C0;">OPS</div>
+                        <div class="agent-role" style="color: #6554C0;">DataOps</div>
+                    </div>
+                    <div class="agent-thought">
+                        "Deployment impact: Minimal. We can hotfix the Airflow variables without restarting the scheduler. Metadata sync is pending approval."
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Right Panel: Implementation Roadmap -->
+        <section class="resolution">
+            <div class="panel-title">Implementation Plan</div>
+            <div class="output-box">
+                <div class="code-header">
+                    <span>snowflake_script.sql</span>
+                    <span style="color: var(--success);">READY</span>
+                </div>
+                <div class="code-content">
+                    <span style="color: #6a737d;">-- STEP 1: Update Landing Table</span><br>
+                    <span style="color: #d73a49;">ALTER TABLE</span> RAW_LANDING.SF_OPPORTUNITIES<br>
+                    <span style="color: #d73a49;">ADD COLUMN</span> lead_source_detail <span style="color: #005cc5;">VARCHAR</span>(255);<br><br>
+                    
+                    <span style="color: #6a737d;">-- STEP 2: Logic Injection</span><br>
+                    <span style="color: #d73a49;">CREATE OR REPLACE VIEW</span> SILVER_STAGING.STG_SF_OPPORTUNITIES <span style="color: #d73a49;">AS</span> (<br>
+                    &nbsp;&nbsp;<span style="color: #d73a49;">SELECT</span> *, <br>
+                    &nbsp;&nbsp;COALESCE(lead_source_detail, <span style="color: #032f62;">'UNKNOWN'</span>) <span style="color: #d73a49;">AS</span> src_detail<br>
+                    &nbsp;&nbsp;<span style="color: #d73a49;">FROM</span> SF_OPPORTUNITIES<br>
+                    );
+                </div>
+            </div>
+            
+            <div style="padding: 16px; background: white; margin: 0 16px 16px; border: 1px solid var(--border); border-radius: 6px;">
+                <div class="agent-role" style="font-size: 0.7rem; margin-bottom: 8px;">Architecture Summary</div>
+                <div style="font-size: 0.8rem; line-height: 1.4;">
+                    1. Update base schema in <b>Snowflake</b>.<br>
+                    2. Modify <b>dbt</b> source YAML.<br>
+                    3. Run validation tests.<br>
+                    4. Sync <b>Airflow</b> dag.
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

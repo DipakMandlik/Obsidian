@@ -1,0 +1,25 @@
+{
+  "id": "conv-1788953519869-40jm5591x",
+  "providerId": "claude",
+  "title": "harness vs model in detailed manner please with re...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788953519898,
+  "updatedAt": 1788953748927,
+  "lastResponseAt": 1788953748927,
+  "sessionId": "4d9b8320-a3e0-40e9-b122-a5e3d72d1b49",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "4d9b8320-a3e0-40e9-b122-a5e3d72d1b49"
+  },
+  "currentNote": "wiki/concepts/Harness vs Model.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 39,
+    "cacheCreationInputTokens": 415,
+    "cacheReadInputTokens": 89291,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 89745,
+    "percentage": 45
+  }
+}

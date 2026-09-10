@@ -1,0 +1,25 @@
+{
+  "id": "conv-1788775474853-az96dvp38",
+  "providerId": "claude",
+  "title": "add these in proper manner please IDP Platform Arc...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788775474857,
+  "updatedAt": 1788927493260,
+  "lastResponseAt": 1788781613634,
+  "sessionId": "6ab0e033-7e63-4615-84d1-9a6748f9ca16",
+  "selectedModel": "haiku",
+  "providerState": {
+    "providerSessionId": "6ab0e033-7e63-4615-84d1-9a6748f9ca16"
+  },
+  "currentNote": "wiki/prototypes/IDP/IDP.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 4009,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 75264,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 79273,
+    "percentage": 40
+  }
+}

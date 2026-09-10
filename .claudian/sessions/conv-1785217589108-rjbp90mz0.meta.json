@@ -1,0 +1,27 @@
+{
+  "id": "conv-1785217589108-rjbp90mz0",
+  "providerId": "claude",
+  "title": "add these below in the compare potential use case ...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1785217589109,
+  "updatedAt": 1786623155725,
+  "lastResponseAt": 1786616508880,
+  "sessionId": "558e2117-a01d-401a-8ba9-7a95b2654a19",
+  "selectedModel": "opus",
+  "providerState": {
+    "previousProviderSessionIds": [
+      "2848b3dd-bc60-4089-bdf1-135c267491b8"
+    ],
+    "providerSessionId": "558e2117-a01d-401a-8ba9-7a95b2654a19"
+  },
+  "usage": {
+    "model": "opus",
+    "inputTokens": 3519,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 65024,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": false,
+    "contextTokens": 68543,
+    "percentage": 7
+  }
+}

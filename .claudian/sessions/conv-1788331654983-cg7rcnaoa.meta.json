@@ -1,0 +1,24 @@
+{
+  "id": "conv-1788331654983-cg7rcnaoa",
+  "providerId": "claude",
+  "title": "LOC_ID\tLOC_NAME\tSKU_ID\tSKU_DESC\tPRIORITY\tRECOMMEND...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788331655021,
+  "updatedAt": 1788754345674,
+  "lastResponseAt": 1788340517778,
+  "sessionId": "2328d1ae-3f7a-4b85-bbdd-df4d586238a7",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "2328d1ae-3f7a-4b85-bbdd-df4d586238a7"
+  },
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 54,
+    "cacheCreationInputTokens": 5247,
+    "cacheReadInputTokens": 92883,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 98184,
+    "percentage": 49
+  }
+}

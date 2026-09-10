@@ -1,0 +1,24 @@
+{
+  "id": "conv-1785752264842-bpd7x4zje",
+  "providerId": "claude",
+  "title": "explain me what is Iceberg tables",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1785752264856,
+  "updatedAt": 1785825773944,
+  "lastResponseAt": 1785816684552,
+  "sessionId": "6e19958f-e795-4a96-a0cb-27c75ebc8433",
+  "selectedModel": "opus",
+  "providerState": {
+    "providerSessionId": "6e19958f-e795-4a96-a0cb-27c75ebc8433"
+  },
+  "usage": {
+    "model": "opus",
+    "inputTokens": 2944,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 45184,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 48128,
+    "percentage": 24
+  }
+}

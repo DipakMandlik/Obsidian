@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1120" viewBox="0 0 1900 1120" role="img" aria-labelledby="title desc">
+  <title id="title">J.G. Wentworth Business Workflow</title>
+  <desc id="desc">High-level workflow from customer request to funding, with stakeholders, data types, and business objectives.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#222"/>
+    </marker>
+    <style>
+      .title { font: 700 28px Arial, sans-serif; fill: #111; }
+      .subtitle { font: 600 18px Arial, sans-serif; fill: #333; }
+      .label { font: 700 18px Arial, sans-serif; }
+      .small { font: 15px Arial, sans-serif; fill: #222; }
+      .tiny { font: 14px Arial, sans-serif; fill: #222; }
+      .section { font: 700 20px Arial, sans-serif; fill: #222; }
+      .center { text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1900" height="1120" fill="#ffffff"/>
+
+  <text x="950" y="42" class="title center">J.G. Wentworth – Business Workflow (High Level)</text>
+  <line x1="360" y1="56" x2="1540" y2="56" stroke="#111" stroke-width="2"/>
+  <text x="950" y="86" class="subtitle center">From Customer Request to Funding</text>
+
+  <g>
+    <circle cx="95" cy="132" r="18" fill="#fff" stroke="#2b6cb0" stroke-width="3"/>
+    <text x="95" y="138" class="label center" fill="#2b6cb0">1</text>
+    <rect x="40" y="160" width="170" height="88" rx="16" fill="#fff" stroke="#2b6cb0" stroke-width="3"/>
+    <text x="125" y="198" class="label center" fill="#2b6cb0">Customer</text>
+    <rect x="40" y="270" width="170" height="122" rx="10" fill="#fff" stroke="#2b6cb0" stroke-width="2" stroke-dasharray="8 8"/>
+    <text x="125" y="298" class="tiny center">
+      <tspan x="125" dy="0">Individuals looking</tspan>
+      <tspan x="125" dy="18">for immediate cash</tspan>
+      <tspan x="125" dy="18">for structured</tspan>
+      <tspan x="125" dy="18">settlements,</tspan>
+      <tspan x="125" dy="18">annuities, lottery</tspan>
+      <tspan x="125" dy="18">winnings, or loans.</tspan>
+    </text>
+  </g>
+  <line x1="210" y1="204" x2="240" y2="204" stroke="#222" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g>
+    <circle cx="295" cy="132" r="18" fill="#fff" stroke="#2f9e44" stroke-width="3"/>
+    <text x="295" y="138" class="label center" fill="#2f9e44">2</text>
+    <rect x="240" y="160" width="170" height="88" rx="16" fill="#fff" stroke="#2f9e44" stroke-width="3"/>
+    <text x="325" y="198" class="label center" fill="#2f9e44">Submits Request</text>
+    <rect x="240" y="270" width="170" height="122" rx="10" fill="#fff" stroke="#2f9e44" stroke-width="2" stroke-dasharray="8 8"/>
+    <text x="325" y="307" class="tiny center">
+      <tspan x="325" dy="0">Customer submits</tspan>
+      <tspan x="325" dy="18">request via phone,</tspan>
+      <tspan x="325" dy="18">website, or with a</tspan>
+      <tspan x="325" dy="18">representative.</tspan>
+    </text>
+  </g>
+  <line x1="410" y1="204" x2="440" y2="204" stroke="#222" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g>
+    <circle cx="495" cy="132" r="18" fill="#fff" stroke="#b7791f" stroke-width="3"/>
+    <text x="495" y="138" class="label center" fill="#b7791f">3</text>
+    <rect x="440" y="160" width="170" height="88" rx="16" fill="#fff" stroke="#b7791f" stroke-width="3"/>
+    <text x="525" y="188" class="label center" fill="#b7791f">
+      <tspan x="525" dy="0">Financial</tspan>
+      <tspan x="525" dy="22">Evaluation</tspan>
+    </text>
+    <rect x="440" y="270" width="170" height="122" rx="10" fill="#fff" stroke="#b7791f" stroke-width="2" stroke-dasharray="8 8"/>
+    <text x="525" y="298" class="tiny center">
+      <tspan x="525" dy="0">Evaluate payment</tspan>
+      <tspan x="525" dy="18">stream, financial</tspan>
+      <tspan x="525" dy="18">value, credit</tspan>
+      <tspan x="525" dy="18">profile, and initial</tspan>
+      <tspan x="525" dy="18">eligibility.</tspan>
+    </text>
+  </g>
+  <line x1="610" y1="204" x2="640" y2="204" stroke="#222" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g>
+    <circle cx="695" cy="132" r="18" fill="#fff" stroke="#805ad5" stroke-width="3"/>
+    <text x="695" y="138" class="label center" fill="#805ad5">4</text>
+    <rect x="640" y="160" width="170" height="88" rx="16" fill="#fff" stroke="#805ad5" stroke-width="3"/>
+    <text x="725" y="188" class="label center" fill="#805ad5">
+      <tspan x="725" dy="0">Document</tspan>
+      <tspan x="725" dy="22">Collection</tspan>
+    </text>
+    <rect x="640" y="270" width="170" height="122" rx="10" fill="#fff" stroke="#805ad5" stroke-width="2" stroke-dasharray="8 8"/>
+    <text x="725" y="298" class="tiny center">
+      <tspan x="725" dy="0">Collect required</tspan>
+      <tspan x="725" dy="18">documents and</tspan>
+      <tspan x="725" dy="18">supporting</tspan>
+      <tspan x="725" dy="18">information from</tspan>
+      <tspan x="725" dy="18">the customer.</tspan>
+    </text>
+  </g>
+  <line x1="810" y1="204" x2="840" y2="204" stroke="#222" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g>
+    <circle cx="895" cy="132" r="18" fill="#fff" stroke="#dd6b20" stroke-width="3"/>
+    <text x="895" y="138" class="label center" fill="#dd6b20">5</text>
+    <rect x="840" y="160" width="170" height="88" rx="16" fill="#fff" stroke="#dd6b20" stroke-width="3"/>
+    <text x="925" y="188" class="label center" fill="#dd6b20">
+      <tspan x="925" dy="0">Compliance &amp;</tspan>
+      <tspan x="925" dy="22">Legal Review</tspan>
+    </text>
+    <rect x="840" y="270" width="170" height="122" rx="10" fill="#fff" stroke="#dd6b20" stroke-width="2" stroke-dasharray="8 8"/>
+    <text x="925" y="307" class="tiny center">
+      <tspan x="925" dy="0">Conduct compliance</tspan>
+      <tspan x="925" dy="18">checks, legal</tspan>
+      <tspan x="925" dy="18">review, and risk</tspan>
+      <tspan x="925" dy="18">assessment.</tspan>
+    </text>
+  </g>
+  <line x1="1010" y1="204" x2="1040" y2="204" stroke="#222" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g>
+    <circle cx="1095" cy="132" r="18" fill="#fff" stroke="#0f9fb3" stroke-width="3"/>
+    <text x="1095" y="138" class="label center" fill="#0f9fb3">6</text>
+    <rect x="1040" y="160" width="170" height="88" rx="16" fill="#fff" stroke="#0f9fb3" stroke-width="3"/>
+    <text x="1125" y="188" class="label center" fill="#0f9fb3">
+      <tspan x="1125" dy="0">Offer</tspan>
+      <tspan x="1125" dy="22">Generation</tspan>
+    </text>
+    <rect x="1040" y="270" width="170" height="122" rx="10" fill="#fff" stroke="#0f9fb3" stroke-width="2" stroke-dasharray="8 8"/>
+    <text x="1125" y="307" class="tiny center">
+      <tspan x="1125" dy="0">Generate offer</tspan>
+      <tspan x="1125" dy="18">based on approved</tspan>
+      <tspan x="1125" dy="18">value, risk, and</tspan>
+      <tspan x="1125" dy="18">company policies.</tspan>
+    </text>
+  </g>
+  <line x1="1210" y1="204" x2="1240" y2="204" stroke="#222" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g>
+    <circle cx="1295" cy="132" r="18" fill="#fff" stroke="#d53f8c" stroke-width="3"/>
+    <text x="1295" y="138" class="label center" fill="#d53f8c">7</text>
+    <rect x="1240" y="160" width="170" height="88" rx="16" fill="#fff" stroke="#d53f8c" stroke-width="3"/>
+    <text x="1325" y="188" class="label center" fill="#d53f8c">
+      <tspan x="1325" dy="0">Customer</tspan>
+      <tspan x="1325" dy="22">Acceptance</tspan>
+    </text>
+    <rect x="1240" y="270" width="170" height="122" rx="10" fill="#fff" stroke="#d53f8c" stroke-width="2" stroke-dasharray="8 8"/>
+    <text x="1325" y="316" class="tiny center">
+      <tspan x="1325" dy="0">Customer reviews</tspan>
+      <tspan x="1325" dy="18">and accepts</tspan>
+      <tspan x="1325" dy="18">the offer.</tspan>
+    </text>
+  </g>
+  <line x1="1410" y1="204" x2="1440" y2="204" stroke="#222" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g>
+    <circle cx="1495" cy="132" r="18" fill="#fff" stroke="#2b6cb0" stroke-width="3"/>
+    <text x="1495" y="138" class="label center" fill="#2b6cb0">8</text>
+    <rect x="1440" y="160" width="170" height="88" rx="16" fill="#fff" stroke="#2b6cb0" stroke-width="3"/>
+    <text x="1525" y="188" class="label center" fill="#2b6cb0">
+      <tspan x="1525" dy="0">Court Approval</tspan>
+      <tspan x="1525" dy="22">(if required)</tspan>
+    </text>
+    <rect x="1440" y="270" width="170" height="122" rx="10" fill="#fff" stroke="#2b6cb0" stroke-width="2" stroke-dasharray="8 8"/>
+    <text x="1525" y="298" class="tiny center">
+      <tspan x="1525" dy="0">Obtain court</tspan>
+      <tspan x="1525" dy="18">approval for</tspan>
+      <tspan x="1525" dy="18">structured</tspan>
+      <tspan x="1525" dy="18">settlements</tspan>
+      <tspan x="1525" dy="18">(where applicable).</tspan>
+    </text>
+  </g>
+  <line x1="1610" y1="204" x2="1640" y2="204" stroke="#222" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g>
+    <circle cx="1695" cy="132" r="18" fill="#fff" stroke="#2f855a" stroke-width="3"/>
+    <text x="1695" y="138" class="label center" fill="#2f855a">9</text>
+    <rect x="1640" y="160" width="170" height="88" rx="16" fill="#fff" stroke="#2f855a" stroke-width="3"/>
+    <text x="1725" y="188" class="label center" fill="#2f855a">
+      <tspan x="1725" dy="0">Funding /</tspan>
+      <tspan x="1725" dy="22">Payment</tspan>
+    </text>
+    <rect x="1640" y="270" width="170" height="122" rx="10" fill="#fff" stroke="#2f855a" stroke-width="2" stroke-dasharray="8 8"/>
+    <text x="1725" y="307" class="tiny center">
+      <tspan x="1725" dy="0">Funds are</tspan>
+      <tspan x="1725" dy="18">disbursed to the</tspan>
+      <tspan x="1725" dy="18">customer. Case is</tspan>
+      <tspan x="1725" dy="18">closed and recorded.</tspan>
+    </text>
+  </g>
+
+  <text x="950" y="455" class="section center">Key Stakeholders Involved</text>
+  <rect x="40" y="478" width="1770" height="96" rx="12" fill="#fff" stroke="#9a9a9a" stroke-width="2"/>
+  <g class="small center">
+    <circle cx="120" cy="526" r="14" fill="#fff" stroke="#2b6cb0" stroke-width="3"/><text x="120" y="556">Customers</text>
+    <circle cx="335" cy="526" r="14" fill="#fff" stroke="#2f9e44" stroke-width="3"/><text x="335" y="548"><tspan x="335" dy="0">Sales</tspan><tspan x="335" dy="18">Representatives</tspan></text>
+    <circle cx="550" cy="526" r="14" fill="#fff" stroke="#b7791f" stroke-width="3"/><text x="550" y="548"><tspan x="550" dy="0">Customer</tspan><tspan x="550" dy="18">Service Teams</tspan></text>
+    <circle cx="765" cy="526" r="14" fill="#fff" stroke="#805ad5" stroke-width="3"/><text x="765" y="548"><tspan x="765" dy="0">Underwriters /</tspan><tspan x="765" dy="18">Financial Analysts</tspan></text>
+    <circle cx="980" cy="526" r="14" fill="#fff" stroke="#dd6b20" stroke-width="3"/><text x="980" y="548"><tspan x="980" dy="0">Legal &amp;</tspan><tspan x="980" dy="18">Compliance Teams</tspan></text>
+    <circle cx="1195" cy="526" r="14" fill="#fff" stroke="#0f9fb3" stroke-width="3"/><text x="1195" y="548"><tspan x="1195" dy="0">Operations</tspan><tspan x="1195" dy="18">Teams</tspan></text>
+    <circle cx="1410" cy="526" r="14" fill="#fff" stroke="#d53f8c" stroke-width="3"/><text x="1410" y="548"><tspan x="1410" dy="0">Finance</tspan><tspan x="1410" dy="18">Teams</tspan></text>
+    <circle cx="1625" cy="526" r="14" fill="#fff" stroke="#2b6cb0" stroke-width="3"/><text x="1625" y="548"><tspan x="1625" dy="0">External Courts</tspan><tspan x="1625" dy="18">&amp; Partners</tspan></text>
+  </g>
+
+  <text x="950" y="632" class="section center">Types of Data Handled</text>
+  <rect x="40" y="666" width="850" height="214" rx="12" fill="#fff" stroke="#2f9e44" stroke-width="2"/>
+  <rect x="1020" y="666" width="790" height="214" rx="12" fill="#fff" stroke="#2b6cb0" stroke-width="2"/>
+  <rect x="275" y="648" width="380" height="34" rx="8" fill="#fff" stroke="#2f9e44" stroke-width="2"/>
+  <rect x="1225" y="648" width="380" height="34" rx="8" fill="#fff" stroke="#2b6cb0" stroke-width="2"/>
+  <text x="465" y="671" class="label center" fill="#2f9e44">Structured Data (Examples)</text>
+  <text x="1415" y="671" class="label center" fill="#2b6cb0">Unstructured Data (Examples)</text>
+
+  <g class="small center">
+    <text x="120" y="760"><tspan x="120" dy="0">Customer</tspan><tspan x="120" dy="18">Profiles</tspan></text>
+    <text x="230" y="760"><tspan x="230" dy="0">Payment</tspan><tspan x="230" dy="18">Schedules</tspan></text>
+    <text x="340" y="760"><tspan x="340" dy="0">Loan</tspan><tspan x="340" dy="18">Applications</tspan></text>
+    <text x="450" y="760"><tspan x="450" dy="0">Credit</tspan><tspan x="450" dy="18">Information</tspan></text>
+    <text x="560" y="760"><tspan x="560" dy="0">Transaction</tspan><tspan x="560" dy="18">History</tspan></text>
+    <text x="670" y="760"><tspan x="670" dy="0">Case</tspan><tspan x="670" dy="18">Status</tspan></text>
+    <text x="780" y="760"><tspan x="780" dy="0">Financial</tspan><tspan x="780" dy="18">Calculations</tspan></text>
+    <text x="850" y="760"><tspan x="850" dy="0">Payment</tspan><tspan x="850" dy="18">History</tspan></text>
+
+    <text x="1110" y="760"><tspan x="1110" dy="0">Settlement</tspan><tspan x="1110" dy="18">Agreements</tspan></text>
+    <text x="1230" y="760"><tspan x="1230" dy="0">Legal</tspan><tspan x="1230" dy="18">Contracts</tspan></text>
+    <text x="1350" y="760"><tspan x="1350" dy="0">Identity</tspan><tspan x="1350" dy="18">Documents</tspan></text>
+    <text x="1470" y="760"><tspan x="1470" dy="0">Bank</tspan><tspan x="1470" dy="18">Statements</tspan></text>
+    <text x="1590" y="769">Emails</text>
+    <text x="1690" y="760"><tspan x="1690" dy="0">Call</tspan><tspan x="1690" dy="18">Transcripts</tspan></text>
+    <text x="1770" y="760"><tspan x="1770" dy="0">Supporting</tspan><tspan x="1770" dy="18">Documents</tspan></text>
+  </g>
+
+  <text x="950" y="944" class="section center">Business Objectives</text>
+  <rect x="40" y="968" width="1770" height="112" rx="12" fill="#fff" stroke="#9a9a9a" stroke-width="2"/>
+  <g class="small center">
+    <line x1="260" y1="980" x2="260" y2="1066" stroke="#c7c7c7" stroke-width="2" stroke-dasharray="6 8"/>
+    <line x1="480" y1="980" x2="480" y2="1066" stroke="#c7c7c7" stroke-width="2" stroke-dasharray="6 8"/>
+    <line x1="700" y1="980" x2="700" y2="1066" stroke="#c7c7c7" stroke-width="2" stroke-dasharray="6 8"/>
+    <line x1="920" y1="980" x2="920" y2="1066" stroke="#c7c7c7" stroke-width="2" stroke-dasharray="6 8"/>
+    <line x1="1140" y1="980" x2="1140" y2="1066" stroke="#c7c7c7" stroke-width="2" stroke-dasharray="6 8"/>
+    <line x1="1360" y1="980" x2="1360" y2="1066" stroke="#c7c7c7" stroke-width="2" stroke-dasharray="6 8"/>
+    <line x1="1580" y1="980" x2="1580" y2="1066" stroke="#c7c7c7" stroke-width="2" stroke-dasharray="6 8"/>
+
+    <text x="150" y="1012"><tspan x="150" dy="0">Process customer</tspan><tspan x="150" dy="18">requests efficiently</tspan></text>
+    <text x="370" y="1003"><tspan x="370" dy="0">Assess financial &amp;</tspan><tspan x="370" dy="18">legal eligibility</tspan><tspan x="370" dy="18">accurately</tspan></text>
+    <text x="590" y="1012"><tspan x="590" dy="0">Ensure regulatory</tspan><tspan x="590" dy="18">compliance</tspan></text>
+    <text x="810" y="1012"><tspan x="810" dy="0">Reduce operational</tspan><tspan x="810" dy="18">turnaround time</tspan></text>
+    <text x="1030" y="1012"><tspan x="1030" dy="0">Improve customer</tspan><tspan x="1030" dy="18">experience</tspan></text>
+    <text x="1250" y="1012"><tspan x="1250" dy="0">Manage financial</tspan><tspan x="1250" dy="18">risk</tspan></text>
+    <text x="1470" y="1012"><tspan x="1470" dy="0">Maintain complete</tspan><tspan x="1470" dy="18">auditability</tspan></text>
+    <text x="1695" y="1003"><tspan x="1695" dy="0">Handle large volumes</tspan><tspan x="1695" dy="18">of financial &amp; legal</tspan><tspan x="1695" dy="18">documentation</tspan></text>
+  </g>
+</svg>

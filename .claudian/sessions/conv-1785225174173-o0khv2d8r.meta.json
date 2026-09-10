@@ -1,0 +1,25 @@
+{
+  "id": "conv-1785225174173-o0khv2d8r",
+  "providerId": "claude",
+  "title": "# Pi-Monitor — Databricks Cost Intelligence Platfo...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1785225174205,
+  "updatedAt": 1786440190591,
+  "lastResponseAt": 1785319510047,
+  "sessionId": "ec7d1c86-54e2-449b-94d9-7a611b28b241",
+  "selectedModel": "opus",
+  "providerState": {
+    "providerSessionId": "ec7d1c86-54e2-449b-94d9-7a611b28b241"
+  },
+  "currentNote": "wiki/DataOps/Idea Discussion.md",
+  "usage": {
+    "model": "opus",
+    "inputTokens": 3857,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 46464,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 50321,
+    "percentage": 25
+  }
+}

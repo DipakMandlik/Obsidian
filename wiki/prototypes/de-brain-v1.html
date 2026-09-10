@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Engineering Brain - Control Room</title>
+    <style>
+        :root {
+            --bg-deep: #050508;
+            --panel-bg: #111118;
+            --accent-blue: #00d2ff;
+            --accent-green: #00ff95;
+            --accent-orange: #ff9d00;
+            --text-main: #e0e0e6;
+            --text-dim: #888891;
+            --border: #22222e;
+        }
+
+        body {
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            font-family: 'JetBrains Mono', 'Inter', monospace;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Header / System Status */
+        header {
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(17, 17, 24, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .system-status {
+            display: flex;
+            gap: 2rem;
+            font-size: 0.8rem;
+        }
+
+        .status-item { display: flex; align-items: center; gap: 0.5rem; }
+        .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-green); box-shadow: 0 0 10px var(--accent-green); }
+
+        /* Main Layout */
+        main {
+            display: grid;
+            grid-template-columns: 300px 1fr 400px;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .panel {
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .panel-header {
+            padding: 0.75rem 1rem;
+            background: var(--panel-bg);
+            border-bottom: 1px solid var(--border);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            color: var(--text-dim);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Schema / Lineage Panel */
+        #lineage-list {
+            padding: 1rem;
+            font-size: 0.8rem;
+            overflow-y: auto;
+        }
+
+        .table-item {
+            padding: 0.5rem;
+            border-left: 2px solid var(--accent-blue);
+            margin-bottom: 0.5rem;
+            background: rgba(0, 210, 255, 0.05);
+        }
+
+        /* Agent Chat Panel */
+        #agent-core {
+            padding: 1.5rem;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .message {
+            display: flex;
+            gap: 1rem;
+            max-width: 90%;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        .agent-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .msg-content { background: var(--panel-bg); padding: 1rem; border-radius: 0 8px 8px 8px; border: 1px solid var(--border); }
+        .agent-name { font-size: 0.7rem; margin-bottom: 0.4rem; color: var(--accent-blue); text-transform: uppercase; }
+        .msg-text { font-size: 0.9rem; line-height: 1.5; color: var(--text-main); }
+
+        /* Solution Panel */
+        #solution-code {
+            padding: 1rem;
+            font-size: 0.85rem;
+            background: #0d0d12;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .code-block {
+            color: #d1d1d1;
+            margin-bottom: 2rem;
+        }
+
+        .sql-keyword { color: #ff79c6; }
+        .sql-table { color: #50fa7b; }
+
+        /* Personality Specifics */
+        .architect { border: 1px solid var(--accent-orange); color: var(--accent-orange); }
+        .engineer { border: 1px solid var(--accent-blue); color: var(--accent-blue); }
+        .ops { border: 1px solid #bd93f9; color: #bd93f9; }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div style="font-weight: bold; font-size: 1.2rem; letter-spacing: -1px;">
+            DATA_ENG_BRAIN <span style="color: var(--text-dim); font-weight: 300;">v1.0.alpha</span>
+        </div>
+        <div class="system-status">
+            <div class="status-item"><div class="status-dot"></div> Snowflake: Connected (Replica)</div>
+            <div class="status-item"><div class="status-dot"></div> dbt Manifest: Synced</div>
+            <div class="status-item"><div class="status-dot"></div> Airflow Metadata: Ingested</div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Panel 1: Environment Context -->
+        <section class="panel">
+            <div class="panel-header">System Context <span>42 Tables</span></div>
+            <div id="lineage-list">
+                <div class="table-item">
+                    <div style="font-weight: bold;">FCT_SALES</div>
+                    <div style="color: var(--text-dim); font-size: 0.7rem;">Grain: Transaction_ID</div>
+                </div>
+                <div class="table-item">
+                    <div style="font-weight: bold;">DIM_CUSTOMERS</div>
+                    <div style="color: var(--text-dim); font-size: 0.7rem;">SCD Type 2</div>
+                </div>
+                <div class="table-item" style="border-left-color: var(--accent-orange);">
+                    <div style="font-weight: bold;">SF_OPPORTUNITIES</div>
+                    <div style="color: var(--accent-orange); font-size: 0.7rem;">! Schema Drift Detected</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Panel 2: Multi-Agent Reasoning -->
+        <section class="panel" style="background: rgba(0,0,0,0.2);">
+            <div class="panel-header">Multi-Agent Discussion <span>Active</span></div>
+            <div id="agent-core">
+                
+                <div class="message">
+                    <div class="agent-avatar architect">DA</div>
+                    <div class="msg-content">
+                        <div class="agent-name" style="color: var(--accent-orange);">Data Architect</div>
+                        <div class="msg-text">
+                            Analyzing the new column `lead_source_detail` in Salesforce. This impacts the `STG_SF_OPPORTUNITIES` model. We need to preserve the star schema integrity in `FCT_SALES`.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message">
+                    <div class="agent-avatar engineer">DE</div>
+                    <div class="msg-content">
+                        <div class="agent-name">Production Engineer</div>
+                        <div class="msg-text">
+                            I've mapped the dbt lineage. We need to update the base YAML and the staging SQL. I'll provide the specific dbt `ref` logic for the downstream transformation.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message">
+                    <div class="agent-avatar ops">DO</div>
+                    <div class="msg-content">
+                        <div class="agent-name" style="color: #bd93f9;">DataOps</div>
+                        <div class="msg-text">
+                            Checking Airflow dependencies. If we run a full-refresh on `STG_SF_OPPORTUNITIES`, we must ensure the `daily_financial_agg` DAG is paused to avoid partial data processing.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Panel 3: Living Solution -->
+        <section class="panel">
+            <div class="panel-header">Generated Plan <span>v1.0</span></div>
+            <div id="solution-code">
+                <div class="code-block">
+                    <div style="color: var(--accent-green); margin-bottom: 0.5rem;">-- 1. Snowflake Alter Table (Replica Simulation)</div>
+                    <code>
+                        <span class="sql-keyword">ALTER TABLE</span> <span class="sql-table">STG_SF_OPPORTUNITIES</span><br>
+                        <span class="sql-keyword">ADD COLUMN</span> lead_source_detail <span class="sql-keyword">VARCHAR</span>;
+                    </code>
+                </div>
+
+                <div class="code-block">
+                    <div style="color: var(--accent-blue); margin-bottom: 0.5rem;"># 2. dbt Staging Update</div>
+                    <code style="color: #f8f8f2;">
+                        - name: lead_source_detail<br>
+                        &nbsp;&nbsp;description: "New SFDC field mapping"<br>
+                        &nbsp;&nbsp;tests: [not_null]
+                    </code>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

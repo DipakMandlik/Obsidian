@@ -1,0 +1,25 @@
+{
+  "id": "conv-1785222820834-t61o0ig8l",
+  "providerId": "claude",
+  "title": "| Capability                            | BSE | Su...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1785222820839,
+  "updatedAt": 1785224286537,
+  "lastResponseAt": 1785223376815,
+  "sessionId": "fbc439e6-79b8-4884-8b37-4e366adbb592",
+  "selectedModel": "fable",
+  "providerState": {
+    "providerSessionId": "fbc439e6-79b8-4884-8b37-4e366adbb592"
+  },
+  "currentNote": "2026-07-28.md",
+  "usage": {
+    "model": "fable",
+    "inputTokens": 62867,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 62867,
+    "percentage": 31
+  }
+}

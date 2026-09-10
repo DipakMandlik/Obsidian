@@ -1,0 +1,24 @@
+{
+  "id": "conv-1785213373463-ky9hlewve",
+  "providerId": "claude",
+  "title": "Hi Good Morning",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1785213373466,
+  "updatedAt": 1785217525011,
+  "lastResponseAt": 1785217347095,
+  "sessionId": "f2e99c89-92ae-4692-b958-da401576858f",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "f2e99c89-92ae-4692-b958-da401576858f"
+  },
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 3342,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 117760,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 121102,
+    "percentage": 61
+  }
+}

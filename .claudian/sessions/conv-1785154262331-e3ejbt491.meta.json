@@ -1,0 +1,15 @@
+{
+  "id": "conv-1785154262331-e3ejbt491",
+  "providerId": "claude",
+  "title": "h",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1785154262331,
+  "updatedAt": 1785155120667,
+  "lastResponseAt": 1785154958512,
+  "sessionId": "783b6461-d325-4f21-8a24-bbee295a7059",
+  "selectedModel": "haiku",
+  "providerState": {
+    "providerSessionId": "783b6461-d325-4f21-8a24-bbee295a7059"
+  },
+  "currentNote": "Excalidraw/Drawing 2026-07-27 17.38.05.excalidraw.md"
+}

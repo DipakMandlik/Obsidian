@@ -1,0 +1,25 @@
+{
+  "id": "conv-1788754950982-2jwmfa1ps",
+  "providerId": "claude",
+  "title": "-- ═══════════════════════════════════════════════...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788754950983,
+  "updatedAt": 1788774630823,
+  "lastResponseAt": 1788772293272,
+  "sessionId": "75989c3b-533d-4a5c-bb25-23ade6413069",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "75989c3b-533d-4a5c-bb25-23ade6413069"
+  },
+  "currentNote": "wiki/Pi-Qlens Deployment/Data Modelling.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 57,
+    "cacheCreationInputTokens": 5612,
+    "cacheReadInputTokens": 152724,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 158393,
+    "percentage": 79
+  }
+}

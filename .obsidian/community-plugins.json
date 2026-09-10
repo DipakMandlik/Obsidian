@@ -1,4 +1,17 @@
 [
   "mcp-tools",
-  "obsidian-local-rest-api"
+  "obsidian-local-rest-api",
+  "obsidian-excalidraw-plugin",
+  "calendar",
+  "obsidian-icon-folder",
+  "remotely-save",
+  "obsidian-linter",
+  "obsidian-mind-map",
+  "notebook-navigator",
+  "obsidian-charts",
+  "obsidian-day-planner",
+  "excel",
+  "realclaudian",
+  "excalidraw-extras",
+  "obsidian-git"
 ]

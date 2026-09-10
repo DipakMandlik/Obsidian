@@ -1,0 +1,25 @@
+{
+  "id": "conv-1788168457761-btiyzr21d",
+  "providerId": "claude",
+  "title": "hi",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788168457765,
+  "updatedAt": 1788774710608,
+  "lastResponseAt": 1788170323958,
+  "sessionId": "165fc995-89be-44bf-b383-8762b7b6cdae",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "165fc995-89be-44bf-b383-8762b7b6cdae"
+  },
+  "currentNote": "wiki/prototypes/Dmart/Snowflake ML AND Capabilities.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 235,
+    "cacheCreationInputTokens": 4672,
+    "cacheReadInputTokens": 99364,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 104271,
+    "percentage": 52
+  }
+}

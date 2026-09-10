@@ -4,24 +4,123 @@
     "type": "split",
     "children": [
       {
-        "id": "6cd4a1633e4645ab",
+        "id": "dfb97468cfe4428c",
         "type": "tabs",
         "children": [
           {
-            "id": "0bd991a0f648c987",
+            "id": "8444bcca510e4a86",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "wiki/sources/jgw.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CLAUDE"
+              "title": "jgw"
+            }
+          },
+          {
+            "id": "329d24b3e6ef2795",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/sources/jgw.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "jgw"
+            }
+          },
+          {
+            "id": "3826c98b1a6d4815",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-08-11.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-08-11"
+            }
+          },
+          {
+            "id": "664b6795dd134029",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily_Notes/2026-07-28.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-07-28"
+            }
+          },
+          {
+            "id": "68bb43b3f94b88aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily_Notes/2026-07-23.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-07-23"
+            }
+          },
+          {
+            "id": "d8171ce41d6057c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily_Notes/2026-07-24.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-07-24"
+            }
+          },
+          {
+            "id": "b3bcc1f611c31b58",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/prototypes/Dmart/Agents.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Agents"
+            }
+          },
+          {
+            "id": "50d274852d8e3ba7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/concepts/Harness vs Model.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Harness vs Model"
             }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -41,7 +140,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -53,7 +154,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:excalidraw",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,12 +174,22 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
+          },
+          {
+            "id": "7e7929874345ee5f",
+            "type": "leaf",
+            "state": {
+              "type": "notebook-navigator",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "notebook-navigator"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 219.5
   },
   "right": {
     "id": "4187baac1b308ddc",
@@ -94,7 +205,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "Excalidraw/JGW_Busineess_Workflow.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +215,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for CLAUDE"
+              "title": "Backlinks for JGW_Busineess_Workflow.excalidraw"
             }
           },
           {
@@ -113,12 +224,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "Excalidraw/JGW_Busineess_Workflow.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from CLAUDE"
+              "title": "Outgoing links from JGW_Busineess_Workflow.excalidraw"
             }
           },
           {
@@ -156,21 +267,71 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "2026-08-12.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of CLAUDE"
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "1d7e9465ce73ab2a",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "935afe3f46b68b19",
+            "type": "leaf",
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Timeline"
+            }
+          },
+          {
+            "id": "f95eba6ec9dfcb08",
+            "type": "leaf",
+            "state": {
+              "type": "planner-time-tracker",
+              "state": {},
+              "icon": "timer",
+              "title": "Time Tracker"
+            }
+          },
+          {
+            "id": "b37d6784ce323aaf",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
+          },
+          {
+            "id": "f1a7a30ed78ebe87",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 495.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,21 +341,68 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "audio-recorder:Start/stop recording": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "remotely-save:Remotely Save": false,
+      "notebook-navigator:Notebook Navigator": false,
+      "obsidian-day-planner:Open Timeline": false,
+      "obsidian-day-planner:Open Multi-Day View": false,
+      "excel:Create Excel File": false,
+      "realclaudian:Open Claudian": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0bd991a0f648c987",
+  "active": "b37d6784ce323aaf",
   "lastOpenFiles": [
-    "wiki/synthesis",
-    "wiki/concepts",
-    "wiki/entities",
-    "wiki/sources",
-    "wiki/log.md",
+    "wiki/prototypes/IDP/IDP.md",
+    "wiki/concepts/Harness vs Model.md",
+    "wiki/concepts/Untitled.md",
+    "wiki/prototypes/IDP/Script.md",
+    "wiki/prototypes/IDP/What we done.md",
+    "wiki/Pi-Qlens Deployment/Data Modelling.md",
+    "wiki/Pi-Qlens Deployment/Draw-io Diagram position.md",
+    "wiki/prototypes/IDP/Benefits and Advantages Slide Prompt.md",
+    "wiki/prototypes/IDP/Arhitecture.md",
+    "IDP-Processing layer.png",
+    "IDP-Layers.png",
+    "wiki/prototypes/IDP/Architecture Diagram Prompt.md",
+    "wiki/prototypes/IDP/IDP.md.tmp.19172.5794e9ba0904",
+    "wiki/prototypes/IDP/IDP.md.tmp.19172.ef877a4f359e",
+    "wiki/prototypes/IDP/IDP.md.tmp.19172.577f6969bc44",
+    "wiki/prototypes/IDP/IDP.md.tmp.19172.89645ec866bb",
+    "wiki/prototypes/IDP/IDP.md.tmp.19172.5ab2bd8f051c",
+    "wiki/prototypes/IDP/IDP.md.tmp.19172.d55a70d581ee",
+    "wiki/prototypes/IDP",
+    "PIQLENS_DQ_Snowflake_DB_ERD.drawio.png",
+    "PiQlens_PostgreSQL_ERD_PRODUCTION.drawio.png",
+    "Qlens-Deployment Approaches 1.png",
+    "Excalidraw/Untitled.canvas",
+    "PIQLENS_DQ_Snowflake_DB_ERD_Excalidraw.excalidraw",
+    "Excalidraw/Data-Model.png",
+    "Qlens-Deployment Approaches.png",
+    "wiki/Pi-Qlens Deployment/Data Modelling.md.tmp.10720.474c7ad2936a",
+    "wiki/Pi-Qlens Deployment/Data Modelling.md.tmp.10720.a44eae299c44",
+    "wiki/Pi-Qlens Deployment/Plan Creation.md",
+    "Excalidraw/Drawing 2026-09-03 10.51.58.excalidraw.md",
+    "wiki/prototypes/Dmart/Purchase Order.md",
+    "wiki/prototypes/Dmart/Agent in Action.md",
+    "wiki/prototypes/Dmart/Agents.md",
+    "wiki/prototypes/Dmart/SP-Create-PO.md",
+    "wiki/concepts/DBT/DBT Testing.md",
+    "wiki/prototypes/Dmart/Excel 2026-09-01 14.44.29.sheet.md",
+    "wiki/prototypes/Dmart/Snowflake ML AND Capabilities.md",
+    "wiki/prototypes/Dmart/Model Registry.md",
+    "skills/Databricks/Basics.md",
     "Untitled.md",
-    "wiki/index.md",
-    "CLAUDE.md",
-    "CLAUDE.md.tmp.11832.1776060584583",
-    "wiki",
-    "sources"
+    "wiki/prototypes/Tata_Electronics/Script.md",
+    "wiki/Sales/Healthcare/NDIS Explanation.md",
+    "wiki/Sales/Healthcare/Problem-Statement.md",
+    "wiki/Sales/Healthcare/NPC.md",
+    "Pasted Image 20260728114657_751.png",
+    "Pasted image 20260811131508.png",
+    "Pasted image 20260811144002.png",
+    "Basic JGW Working Flow.canvas",
+    "Untitled 1.canvas"
   ]
 }

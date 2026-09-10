@@ -1,0 +1,24 @@
+{
+  "id": "conv-1785323071559-fen4cbuku",
+  "providerId": "claude",
+  "title": "add in todays note properlly we decided to move on...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1785323071591,
+  "updatedAt": 1785752246971,
+  "lastResponseAt": 1785326632869,
+  "sessionId": "c68cdf13-c812-4e36-96ad-5416a13c6339",
+  "selectedModel": "opus",
+  "providerState": {
+    "providerSessionId": "c68cdf13-c812-4e36-96ad-5416a13c6339"
+  },
+  "usage": {
+    "model": "opus",
+    "inputTokens": 2097,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 108928,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 111025,
+    "percentage": 56
+  }
+}
