@@ -68,3 +68,9 @@ Expanded [[DBT Testing|DBT]] with full detail on the four test types: Generic Te
 Filled the empty [[Harness vs Model]] stub: model (stateless LLM weights) vs harness (agent runtime — memory, tool execution, RAG, retries, orchestration) division-of-responsibility table, plus real-world examples (Claude Code vs claude.ai vs API, Copilot/Cursor/Windsurf, chat "memory", RAG-grounded hallucination fixes, model-upgrade coupling).
 - Pages created: [[Harness vs Model]]
 - Pages updated: [[index]], [[log]]
+
+## [2026-09-16] ingest | Pi-Govern System Understanding
+
+Filled the empty [[wiki/Pi-Govern/System understanding.md|System Understanding]] stub with a full architecture audit of Pi-Govern (Snowflake-native data governance control plane): stack, repo layout, app/frontend/backend architecture, Snowflake object inventory, security findings, data-safety/idempotency guarantees, the exact governance-score formula, and testing/tech-debt snapshot.
+- Pages created: [[wiki/Pi-Govern/System understanding.md|Pi-Govern — System Understanding]] (filled)
+- Pages updated: [[index]], [[log]]

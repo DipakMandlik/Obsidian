@@ -1,0 +1,25 @@
+{
+  "id": "conv-1789022616279-4pwktujuv",
+  "providerId": "claude",
+  "title": "i am going to create an image for setting the cont...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789022616292,
+  "updatedAt": 1789033058791,
+  "lastResponseAt": 1789022732773,
+  "sessionId": "10b1c022-3d92-468a-b4ad-f8cc0e7861da",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "10b1c022-3d92-468a-b4ad-f8cc0e7861da"
+  },
+  "currentNote": "wiki/Pi-Qlens Deployment/Data Modelling.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 9034,
+    "cacheCreationInputTokens": 650,
+    "cacheReadInputTokens": 98097,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 107781,
+    "percentage": 54
+  }
+}

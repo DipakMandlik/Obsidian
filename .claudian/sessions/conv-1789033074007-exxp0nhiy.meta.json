@@ -1,0 +1,25 @@
+{
+  "id": "conv-1789033074007-exxp0nhiy",
+  "providerId": "claude",
+  "title": "add these in script for 1st image please ==> “Now ...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789033074018,
+  "updatedAt": 1789473279033,
+  "lastResponseAt": 1789034317272,
+  "sessionId": "571ffebc-337f-4369-9fa3-a58902a58ee4",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "571ffebc-337f-4369-9fa3-a58902a58ee4"
+  },
+  "currentNote": "wiki/Pi-Qlens Deployment/Client Call.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 55,
+    "cacheCreationInputTokens": 758,
+    "cacheReadInputTokens": 81199,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 82012,
+    "percentage": 41
+  }
+}

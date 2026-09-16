@@ -1,0 +1,25 @@
+{
+  "id": "conv-1789473300412-8l9rx1ux3",
+  "providerId": "claude",
+  "title": "PI-GOVERN SYSTEM UNDERSTANDING DOCUMENT",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789473300445,
+  "updatedAt": 1789533117520,
+  "lastResponseAt": 1789533117520,
+  "sessionId": "3aa1f187-b6f2-4b88-b893-7e86afc6e5b3",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "3aa1f187-b6f2-4b88-b893-7e86afc6e5b3"
+  },
+  "currentNote": "wiki/Pi-Govern/System understanding.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 131,
+    "cacheCreationInputTokens": 385,
+    "cacheReadInputTokens": 156413,
+    "contextWindow": 998000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 156929,
+    "percentage": 16
+  }
+}

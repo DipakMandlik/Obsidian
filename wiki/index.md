@@ -16,6 +16,10 @@ _No sources ingested yet._
 
 _No entity pages yet._
 
+## Project Docs
+
+- [[wiki/Pi-Govern/System understanding.md|Pi-Govern — System Understanding]]: Full architecture audit of Pi-Govern, a Snowflake-native data governance control plane (Next.js/FastAPI/Snowpark) — stack, module map, Snowflake object inventory, security findings, governance-score formula, and technical debt.
+
 ## Concepts
 
 - [[DBT Testing|DBT]]: Data build tool — testing practices (Data Testing vs Unit Testing; Generic, Singular, Source Freshness tests).
