@@ -1,0 +1,9 @@
+# Secret-bearing and transient plugins
+.obsidian/plugins/remotely-save/
+
+# Obsidian local workspace cache
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Temporary files
+*.tmp
