@@ -1,0 +1,25 @@
+{
+  "id": "conv-1790234265854-nshw5tks4",
+  "providerId": "claude",
+  "title": "add these please => Yes",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1790234265892,
+  "updatedAt": 1790234438286,
+  "lastResponseAt": 1790234438286,
+  "sessionId": "617e1be5-8df3-4f3c-ab66-3e612a839da4",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "617e1be5-8df3-4f3c-ab66-3e612a839da4"
+  },
+  "currentNote": "skills/COCO/Commands.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 41,
+    "cacheCreationInputTokens": 2585,
+    "cacheReadInputTokens": 82803,
+    "contextWindow": 998000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 85429,
+    "percentage": 9
+  }
+}

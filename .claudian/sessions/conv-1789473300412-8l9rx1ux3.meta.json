@@ -4,14 +4,13 @@
   "title": "PI-GOVERN SYSTEM UNDERSTANDING DOCUMENT",
   "titleGenerationStatus": "failed",
   "createdAt": 1789473300445,
-  "updatedAt": 1789533117520,
+  "updatedAt": 1789972053823,
   "lastResponseAt": 1789533117520,
   "sessionId": "3aa1f187-b6f2-4b88-b893-7e86afc6e5b3",
   "selectedModel": "sonnet",
   "providerState": {
     "providerSessionId": "3aa1f187-b6f2-4b88-b893-7e86afc6e5b3"
   },
-  "currentNote": "wiki/Pi-Govern/System understanding.md",
   "usage": {
     "model": "sonnet",
     "inputTokens": 131,

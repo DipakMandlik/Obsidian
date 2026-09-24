@@ -1,0 +1,16 @@
+{
+  "id": "947726af-8397-4242-b3e9-feedb5df7579",
+  "state": "committed",
+  "createdAt": "2026-09-16T09:42:56.904Z",
+  "snapshots": [
+    {
+      "path": "Pi-Govern",
+      "operation": "mkdir",
+      "entryType": "directory",
+      "phase": "applied",
+      "recoverable": true,
+      "existed": false
+    }
+  ],
+  "completedAt": "2026-09-16T09:42:56.980Z"
+}

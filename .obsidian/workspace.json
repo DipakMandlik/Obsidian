@@ -97,16 +97,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/Pi-Govern/Setup file.md",
+                "file": "Pi-Govern/architecture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Setup file"
+              "title": "architecture"
+            }
+          },
+          {
+            "id": "cc4afd5fba1c42c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cortex Code/04 - Agents/Agent - SCOS PySpark Adjudicator.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Agent - SCOS PySpark Adjudicator"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -175,7 +189,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 219.5
+    "width": 237.5
   },
   "right": {
     "id": "4187baac1b308ddc",
@@ -313,11 +327,11 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
-    "width": 495.5
+    "width": 453.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -341,53 +355,53 @@
   },
   "active": "56020660e33db069",
   "lastOpenFiles": [
-    "wiki/Pi-Govern/System understanding.md",
-    "wiki/Pi-Govern/Setup file.md",
-    "wiki/Pi-Govern/Problem.md",
-    "wiki/prototypes/Dmart/Agents.md",
-    "wiki/Pi-Govern",
-    "Marketing/Sales.md",
-    "wiki/Pi-Qlens Deployment/Client Call.md",
-    "wiki/prototypes/IDP/Slides-Updation.md",
-    "wiki/Pi-Qlens Deployment/Client Call.md.tmp.23452.49704853097e",
-    "wiki/Pi-Qlens Deployment/Client Call.md.tmp.23452.f422f30ab39b",
+    "Cortex Code/09 - Workflows/Workflow - PySpark to Snowpark API (SMA) Migration.md",
+    "Cortex Code/09 - Workflows/Workflow - XO Operator OODA Loop.md",
+    "Cortex Code/09 - Workflows/Workflow - Well-Architected Framework Account Assessment.md",
+    "Cortex Code/09 - Workflows/Workflow - Spec-Driven Development (EARS).md",
+    "Cortex Code/09 - Workflows/Workflow - Snowpipe BCDR Failover and Catchup.md",
+    "Cortex Code/09 - Workflows/Workflow - PySpark to Snowpark Connect (SCOS) Migration.md",
+    "Cortex Code/09 - Workflows/Workflow - Enterprise RBAC Implementation.md",
+    "Cortex Code/09 - Workflows",
+    "skills/COCO/check-agent-access/SKILL.md",
+    "skills/COCO/check-agent-access/README.md",
+    "skills/COCO/check-agent-access/LICENSE",
+    "skills/COCO/check-agent-access",
+    "skills/COCO/Commands.md",
+    "Cortex Code/99 - Archive/Archive README.md",
+    "Cortex Code/99 - Archive",
+    "Cortex Code/12 - Source & Version Tracking/How to Update the Cortex Code Knowledge Base.md",
+    "Cortex Code/12 - Source & Version Tracking/Cortex Code Skills Source Registry.md",
+    "Cortex Code/12 - Source & Version Tracking/COCO Knowledge Manifest.md",
+    "Cortex Code/12 - Source & Version Tracking",
+    "Cortex Code/11 - Use Cases/Cortex Code WOW Demonstrations.md",
+    "Cortex Code/11 - Use Cases",
+    "Cortex Code/01 - Core Concepts/How to Choose a Cortex Code Skill.md",
+    "Cortex Code/01 - Core Concepts/Cortex Code Architecture and Core Concepts.md",
+    "Cortex Code/01 - Core Concepts",
+    "Cortex Code/00 - Cortex Code Index/Cortex Code Skills Master Index.md",
+    "Cortex Code/00 - Cortex Code Index/CoCo Quick Access.md",
+    "Cortex Code/00 - Cortex Code Index",
+    "Cortex Code/10 - Commands & Prompts/Validation Prompts.md",
+    "Cortex Code/10 - Commands & Prompts/Skill Activation Commands.md",
+    "Cortex Code/10 - Commands & Prompts/Plugin Installation Commands.md",
+    "Cortex Code/10 - Commands & Prompts/Planning Prompts.md",
+    "Cortex Code/10 - Commands & Prompts/Multi-Agent Prompts.md",
+    "Cortex Code/10 - Commands & Prompts/Migration Prompts.md",
+    "Cortex Code/10 - Commands & Prompts/MCP Prompts.md",
+    "Cortex Code/10 - Commands & Prompts",
+    "Cortex Code/08 - Installation & Setup",
+    "Pasted image 20260921101212.png",
     "Piqlens-Features.png",
-    "wiki/Pi-Qlens Deployment/Client Call.md.tmp.23452.3d1129060e73",
     "Pi-Qlens-Capability.png",
-    "wiki/Pi-Qlens Deployment/Data Modelling.md",
-    "wiki/Pi-Qlens Deployment/Draw-io Diagram position.md",
-    "wiki/Pi-Qlens Deployment/Plan Creation.md",
-    "wiki/concepts/Harness vs Model.md",
-    "wiki/prototypes/IDP/IDP.md",
-    "wiki/concepts/Untitled.md",
-    "wiki/prototypes/IDP/Script.md",
-    "wiki/prototypes/IDP/What we done.md",
-    "wiki/prototypes/IDP/Benefits and Advantages Slide Prompt.md",
-    "wiki/prototypes/IDP/Arhitecture.md",
     "IDP-Processing layer.png",
     "IDP-Layers.png",
-    "wiki/prototypes/IDP/Architecture Diagram Prompt.md",
-    "wiki/prototypes/IDP/IDP.md.tmp.19172.5794e9ba0904",
-    "wiki/prototypes/IDP/IDP.md.tmp.19172.ef877a4f359e",
-    "wiki/prototypes/IDP/IDP.md.tmp.19172.577f6969bc44",
-    "wiki/prototypes/IDP/IDP.md.tmp.19172.89645ec866bb",
-    "wiki/prototypes/IDP/IDP.md.tmp.19172.5ab2bd8f051c",
-    "wiki/prototypes/IDP/IDP.md.tmp.19172.d55a70d581ee",
     "PIQLENS_DQ_Snowflake_DB_ERD.drawio.png",
     "PiQlens_PostgreSQL_ERD_PRODUCTION.drawio.png",
     "Qlens-Deployment Approaches 1.png",
     "Excalidraw/Untitled.canvas",
     "Excalidraw/Data-Model.png",
     "Qlens-Deployment Approaches.png",
-    "Excalidraw/Drawing 2026-09-03 10.51.58.excalidraw.md",
-    "wiki/prototypes/Dmart/Purchase Order.md",
-    "wiki/prototypes/Dmart/Agent in Action.md",
-    "wiki/prototypes/Dmart/SP-Create-PO.md",
-    "wiki/concepts/DBT/DBT Testing.md",
-    "wiki/prototypes/Dmart/Excel 2026-09-01 14.44.29.sheet.md",
-    "wiki/prototypes/Dmart/Snowflake ML AND Capabilities.md",
-    "wiki/prototypes/Dmart/Model Registry.md",
-    "Pasted Image 20260728114657_751.png",
     "Basic JGW Working Flow.canvas",
     "Untitled 1.canvas"
   ]

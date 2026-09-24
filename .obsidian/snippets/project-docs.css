@@ -1,0 +1,228 @@
+/* ============================================================
+   π-Govern Enterprise Documentation Styling System
+   File: project-docs.css
+   Full Obsidian Theme Extension (Live Preview & Reading View)
+   ============================================================ */
+
+/* ── Global Canvas ── */
+.theme-light,
+.markdown-rendered,
+.markdown-source-view.mod-cm6 .cm-scroller {
+  --background-primary: #ffffff !important;
+  --background-secondary: #f8fafc !important;
+  --text-normal: #0f172a !important;
+  --text-muted: #64748b !important;
+  --text-accent: #2563eb !important;
+  --text-faint: #94a3b8 !important;
+  --interactive-accent: #2563eb !important;
+  --font-text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif !important;
+}
+
+/* ── Top Level Header (H1) ── */
+.markdown-rendered h1,
+.cm-header-1 {
+  font-size: 32px !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+  letter-spacing: -0.025em !important;
+  margin-top: 14px !important;
+  margin-bottom: 8px !important;
+  line-height: 1.25 !important;
+  border-bottom: none !important;
+}
+
+/* ── Subtitle (italic right below H1) ── */
+.markdown-rendered h1 + p > em,
+.markdown-rendered h1 + em {
+  display: block !important;
+  font-size: 15px !important;
+  color: #64748b !important;
+  font-style: normal !important;
+  margin-bottom: 24px !important;
+  padding-bottom: 16px !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+/* ── Numbered Section Headers (H2) ── */
+.markdown-rendered h2,
+.cm-header-2 {
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+  letter-spacing: -0.015em !important;
+  margin-top: 36px !important;
+  margin-bottom: 16px !important;
+  padding-bottom: 8px !important;
+  border-bottom: 1px solid #f1f5f9 !important;
+}
+
+/* ── Callouts as Rounded Cards ── */
+.callout {
+  border-radius: 16px !important;
+  padding: 18px 22px !important;
+  margin: 18px 0 !important;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03) !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+
+.callout-title {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em !important;
+}
+
+.callout-content {
+  font-size: 13.5px !important;
+  line-height: 1.65 !important;
+}
+
+/* Callout Variant Tints (Matching Reference Pastel Colors) */
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"] {
+  background-color: #faf5ff !important;
+  border-color: #e9d5ff !important;
+  --callout-color: 168, 85, 247;
+}
+.callout[data-callout="abstract"] .callout-title,
+.callout[data-callout="summary"] .callout-title {
+  color: #7e22ce !important;
+}
+
+.callout[data-callout="tip"],
+.callout[data-callout="hint"] {
+  background-color: #f0fdf4 !important;
+  border-color: #bbf7d0 !important;
+  --callout-color: 34, 197, 94;
+}
+.callout[data-callout="tip"] .callout-title,
+.callout[data-callout="hint"] .callout-title {
+  color: #15803d !important;
+}
+
+.callout[data-callout="note"],
+.callout[data-callout="info"] {
+  background-color: #eff6ff !important;
+  border-color: #bfdbfe !important;
+  --callout-color: 59, 130, 246;
+}
+.callout[data-callout="note"] .callout-title,
+.callout[data-callout="info"] .callout-title {
+  color: #1d4ed8 !important;
+}
+
+.callout[data-callout="warning"],
+.callout[data-callout="caution"] {
+  background-color: #fffbeb !important;
+  border-color: #fde68a !important;
+  --callout-color: 245, 158, 11;
+}
+.callout[data-callout="warning"] .callout-title,
+.callout[data-callout="caution"] .callout-title {
+  color: #b45309 !important;
+}
+
+.callout[data-callout="danger"],
+.callout[data-callout="error"] {
+  background-color: #fef2f2 !important;
+  border-color: #fecaca !important;
+  --callout-color: 239, 68, 68;
+}
+.callout[data-callout="danger"] .callout-title,
+.callout[data-callout="error"] .callout-title {
+  color: #b91c1c !important;
+}
+
+.callout[data-callout="quote"] {
+  background-color: #faf5ff !important;
+  border-color: #e9d5ff !important;
+  border-left: 4px solid #a855f7 !important;
+  color: #581c87 !important;
+}
+
+/* ── Modern Tables ── */
+.markdown-rendered table {
+  width: 100% !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  margin: 18px 0 !important;
+  font-size: 13px !important;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04) !important;
+  background-color: #ffffff !important;
+}
+
+.markdown-rendered table th {
+  background-color: #f8fafc !important;
+  color: #334155 !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+  padding: 11px 16px !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+.markdown-rendered table td {
+  padding: 11px 16px !important;
+  border-bottom: 1px solid #f1f5f9 !important;
+  color: #1e293b !important;
+  vertical-align: middle !important;
+}
+
+.markdown-rendered table tr:last-child td {
+  border-bottom: none !important;
+}
+
+.markdown-rendered table tr:hover td {
+  background-color: #f8fafc !important;
+}
+
+/* ── Code Blocks (Terminal Style) ── */
+.markdown-rendered pre,
+.markdown-rendered pre code,
+.cm-s-obsidian pre.HyperMD-codeblock {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+  border-radius: 14px !important;
+  padding: 16px 20px !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  font-size: 12.5px !important;
+  line-height: 1.7 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* ── Task Lists / Checklists ── */
+.markdown-rendered input[type="checkbox"],
+.markdown-source-view.mod-cm6 input[type="checkbox"] {
+  border-radius: 4px !important;
+  border: 1.5px solid #a855f7 !important;
+  width: 17px !important;
+  height: 17px !important;
+  accent-color: #9333ea !important;
+  cursor: pointer !important;
+}
+
+/* ── Badges & Pills ── */
+.doc-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  line-height: 1;
+}
+
+/* ── Mermaid Diagrams ── */
+.mermaid {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 16px !important;
+  padding: 24px !important;
+  margin: 18px 0 !important;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04) !important;
+  display: flex !important;
+  justify-content: center !important;
+}

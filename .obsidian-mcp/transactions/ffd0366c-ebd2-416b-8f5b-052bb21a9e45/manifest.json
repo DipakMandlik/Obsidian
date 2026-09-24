@@ -1,0 +1,18 @@
+{
+  "id": "ffd0366c-ebd2-416b-8f5b-052bb21a9e45",
+  "state": "committed",
+  "createdAt": "2026-09-16T09:44:52.756Z",
+  "snapshots": [
+    {
+      "path": "wiki/Pi-Govern/decision.md",
+      "operation": "write",
+      "entryType": "file",
+      "phase": "applied",
+      "plannedEtag": "56bf42984bb6d3898111e0507ac8cfc1825a02ff355e64f9beae5a23627e62a0",
+      "recoverable": true,
+      "existed": false,
+      "committedEtag": "56bf42984bb6d3898111e0507ac8cfc1825a02ff355e64f9beae5a23627e62a0"
+    }
+  ],
+  "completedAt": "2026-09-16T09:44:52.947Z"
+}

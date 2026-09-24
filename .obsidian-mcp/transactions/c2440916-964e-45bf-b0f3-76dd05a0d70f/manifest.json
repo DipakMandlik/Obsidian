@@ -1,0 +1,18 @@
+{
+  "id": "c2440916-964e-45bf-b0f3-76dd05a0d70f",
+  "state": "committed",
+  "createdAt": "2026-09-16T11:10:59.321Z",
+  "snapshots": [
+    {
+      "path": "wiki/Pi-Govern/architecture.md",
+      "operation": "write",
+      "entryType": "file",
+      "phase": "applied",
+      "plannedEtag": "d5bed0e379c7fd56d27ccd5d305bb45e3c6f31faf97af740610ef78ad134779d",
+      "recoverable": true,
+      "existed": false,
+      "committedEtag": "d5bed0e379c7fd56d27ccd5d305bb45e3c6f31faf97af740610ef78ad134779d"
+    }
+  ],
+  "completedAt": "2026-09-16T11:10:59.391Z"
+}
